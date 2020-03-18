@@ -34,9 +34,14 @@ struct Currently: Codable {
 }
 
 enum Icon: String, Codable {
-    case clearDay = "clear-day"
-    case cloudy = "cloudy"
-    case partlyCloudyDay = "partly-cloudy-day"
+    case clearNight = "clear-night"
+       case cloudy = "cloudy"
+       case fog = "fog"
+       case partlyCloudyDay = "partly-cloudy-day"
+       case partlyCloudyNight = "partly-cloudy-night"
+       case rain = "rain"
+       case clearDay = "clear-day"
+       case snow = "snow"
 }
 
 enum PrecipType: String, Codable {
@@ -44,13 +49,19 @@ enum PrecipType: String, Codable {
 }
 
 enum Summary: String, Codable {
-    case небольшаяОблачность = "Небольшая Облачность"
-    case облачно = "Облачно"
-    case сильнаяОблачность = "Сильная Облачность"
-    case ясно = "Ясно"
-    case возможенНебольшойДождь = "Возможен Небольшой Дождь"
-    case возможенНезначительныйДождь = "Возможен Незначительный Дождь"
-    case небольшойДождь = "Небольшой Дождь"
+     case влажно = "Влажно"
+       case влажноИНебольшаяОблачность = "Влажно и Небольшая Облачность"
+       case влажноИОблачно = "Влажно и Облачно"
+       case влажноИСильнаяОблачность = "Влажно и Сильная Облачность"
+       case влажноИТуман = "Влажно и Туман"
+       case возможенНебольшойДождьИВлажно = "Возможен Небольшой Дождь и Влажно"
+       case облачно = "Облачно"
+       case ясно = "Ясно"
+       case небольшаяОблачность = "Небольшая Облачность"
+       case возможенНезначительныйДождь = "Возможен Незначительный Дождь"
+       case сильнаяОблачность = "Сильная Облачность"
+       case туман = "Туман"
+       case незначительныйДождь = "Незначительный Дождь"
 }
 
 // MARK: - Daily

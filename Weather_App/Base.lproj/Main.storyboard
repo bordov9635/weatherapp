@@ -22,25 +22,19 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="308.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFY-uB-W1K">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="78.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wTo-ej-Qhl">
-                                                <rect key="frame" x="0.0" y="74.5" width="375" height="55.5"/>
+                                                <rect key="frame" x="0.0" y="88.5" width="375" height="67.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2N1-wK-kaM">
-                                                <rect key="frame" x="0.0" y="140" width="375" height="39.5"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdQ-PU-2oQ">
-                                                <rect key="frame" x="0.0" y="189.5" width="375" height="119"/>
+                                                <rect key="frame" x="0.0" y="166" width="375" height="142.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="56"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -61,7 +55,7 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="-55" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="by4-Gn-DMn">
                                                             <rect key="frame" x="15" y="11" width="345" height="51"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afV-xd-xDf">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afV-xd-xDf">
                                                                     <rect key="frame" x="0.0" y="0.0" width="127.5" height="51"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                                     <nil key="textColor"/>
@@ -129,7 +123,6 @@
                         <outlet property="cityNameLabel" destination="pFY-uB-W1K" id="PUu-XQ-pyp"/>
                         <outlet property="dailyWeatherTableView" destination="m4b-hV-a7S" id="rnW-Kq-jg9"/>
                         <outlet property="temperatureLabel" destination="gdQ-PU-2oQ" id="euA-B5-hqj"/>
-                        <outlet property="weatherNowDescriptionLabel" destination="2N1-wK-kaM" id="gVP-FN-GcG"/>
                         <outlet property="weatherNowLabel" destination="wTo-ej-Qhl" id="o9s-uK-63f"/>
                     </connections>
                 </viewController>

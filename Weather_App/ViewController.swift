@@ -12,7 +12,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var cityNameLabel: UILabel!
     @IBOutlet weak var temperatureLabel: UILabel!
-    @IBOutlet weak var weatherNowDescriptionLabel: UILabel!
     @IBOutlet weak var weatherNowLabel: UILabel!
     @IBOutlet weak var dailyWeatherTableView: UITableView!
     
@@ -51,7 +50,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                         DispatchQueue.main.async {
                             self.cityNameLabel.text = "Гомель"
                             self.weatherNowLabel.text = (self.responseModel?.currently.summary.self).map { $0.rawValue }
-                            self.weatherNowDescriptionLabel.text = (self.responseModel?.currently.icon).map { $0.rawValue }
                             self.dailyWeatherTableView.reloadData()
                             self.reloadView()
                         }
@@ -73,7 +71,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let temperatureNow = responseModel?.currently
         if let currentTemp = temperatureNow?.temperature{
-            self.temperatureLabel.text = String(describing: currentTemp)
+            self.temperatureLabel.text = "\(String(describing: Int(currentTemp)))\(degreeSymbol)"
         } else {
             self.temperatureLabel.text = "No data"
         }
@@ -108,13 +106,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     let listArray = responseModel?.daily.data[indexPath.row + 1]
     if let minTemperature = listArray?.temperatureLow {
-        cell.minTempLabel.text = String(describing: minTemperature)
+        cell.minTempLabel.text = "\(String(describing:Int( minTemperature)))\(degreeSymbol)"
     } else {
         cell.minTempLabel.text = "No data"
     }
     
     if let maxTemperature = listArray?.temperatureHigh {
-           cell.maxTempLabel.text = String(describing: maxTemperature)
+           cell.maxTempLabel.text = "\(String(describing: Int( maxTemperature)))\(degreeSymbol)"
        } else {
            cell.maxTempLabel.text = "No data"
        }
